@@ -38,6 +38,10 @@ public class employeeController {
 
     @PostMapping("/delete/{id}")
     public String delete(@PathVariable int id){
+        Employee e=employeeService.getById(id);
+        if(e==null){
+            throw new RuntimeException("Data not present of this id= "+id);
+        }
         employeeService.delete(id);
         return "data deleted successfully";
     }
