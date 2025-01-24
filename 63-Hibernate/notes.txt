@@ -1,0 +1,27 @@
+1- Spring boot is the top layer of JPA.JPa is java persistence api
+
+2- it is just an interface to implement it.we use hibernate 
+
+3- hibernate is the orm tool which is use to mapped java object to 
+	database relational table model or vice versa.
+
+4- timestamp---we use it when we want to store the created time of
+	 the row or the updated time of the row
+
+5- namedQuery--through namedQuery we have not write the whole query again and again 
+	we hve to give a query to a name and when we need that we just use that name.
+
+6- namedQueries--through this we can write multiple namedQuery for that we have to put
+	 namedQuery with annotaion to namedQueries.
+
+7- native Query is the basic sql query we can also write in java.
+
+8- In one to one mapping we have to create one table as main table and one is secondary we can
+	create any table as main and in main table we have to write the class name of the secondary table
+	in java file. and annotate it as onetoone.And also we have to create the column of secondary table
+	primary key as foreign key in main table in sql.
+
+9- In Bidirectional wehave to create the vriable of primary class in secondary class and annotate it
+	by one to one mappedBy-secondary class variable name which we create in the main class.
+
+10-Soft delete is used when we want to keep the history of the row which we have deleted.
